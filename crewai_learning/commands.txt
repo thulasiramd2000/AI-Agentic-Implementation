@@ -1,0 +1,16 @@
+uv tool install crewai
+
+export PATH="$HOME/.local/bin:$PATH"
+
+crewai create crew <project_name>
+
+cd <project_name>
+crewai run
+
+crewai train <n> <filename>     # train the crew
+crewai replay <task_id>         # replay from a specific task
+crewai test <n> <model>         # test the crew
+
+uv tool list
+
+uv tool upgrade crewai
